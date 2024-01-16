@@ -14,3 +14,9 @@ As you begin building larger projects, you may want to consider using test-drive
 Now, let’s look at a slightly more complex function, and think about how writing tests can help us to find errors. We’ll now write a function called is_prime that returns True if and only if its input is prime:
 
 
+## Unit Testing
+
+
+Even though we were able to run tests automatically using the above method, we still might want to avoid having to write out each of those tests. Thankfully, we can use the Python unittest library to make this process a little bit easier. Let’s take a look at what a testing program might look like for our is_prime function.
+
+
