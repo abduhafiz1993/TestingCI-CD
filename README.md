@@ -20,3 +20,20 @@ Now, let’s look at a slightly more complex function, and think about how writi
 Even though we were able to run tests automatically using the above method, we still might want to avoid having to write out each of those tests. Thankfully, we can use the Python unittest library to make this process a little bit easier. Let’s take a look at what a testing program might look like for our is_prime function.
 
 
+assertFalse(x) bool(x) is False
+
+assertIs(a, b) a is b
+
+assertIsNot(a, b) a is not b
+
+assertIsNone(x) x is None
+
+assertIsNotNone(x) x is not None
+
+assertIn(a, b) a in b
+
+assertNotIn(a, b) a not in b
+
+assertIsInstance(a, b)  isinstance(a, b)
+
+assertNotIsInstance(a, b) not isinstance(a,b)
