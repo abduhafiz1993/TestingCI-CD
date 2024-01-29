@@ -34,6 +34,5 @@ class WebpageTests(unittest.TestCase):
         self.assertEqual(driver.find_element_by_tag_name("h1").text, "3")
     
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     unittest.main()
-    
