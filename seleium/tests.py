@@ -24,21 +24,21 @@ class WebpageTests(unittest.TestCase):
         driver.get(file_uri("counter.html"))
         increase = driver.find_element(By.ID, "increase")
         increase.click()
-        self.assertEqual(  h1_text = driver.find_element(By.TAG_NAME, "h1").text, "1")
+        self.assertEqual(driver.find_element(By.TAG_NAME, "h1").text, "1")
     
     def test_decrease(self):
         """Make sure header updated to -1 after 1 click of decrease button"""
         driver.get(file_uri("counter.html"))
         decrease = driver.find_element(By.ID, "decrease")
         decrease.click()
-        self.assertEqual(  h1_text = driver.find_element(By.TAG_NAME, "h1").text, "-1")
+        self.assertEqual(driver.find_element(By.TAG_NAME, "h1").text, "-1")
         
     def test_multiple_increase(self):
         driver.get(file_uri("counter.html"))
         increase = driver.find_element(By.ID, "increase")
         for i in range(3):
             increase.click()
-        self.assertEqual(  h1_text = driver.find_element(By.TAG_NAME, "h1").text, "3")
+        self.assertEqual(driver.find_element(By.TAG_NAME, "h1").text, "3")
     
 
 if __name__ == "__main__":
